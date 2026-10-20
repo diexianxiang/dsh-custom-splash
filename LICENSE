@@ -1,6 +1,11 @@
 MIT License
 
-Copyright (c) 2026 2966466577-del
+Copyright (c) 2026 沈宏宏
+
+This project is based on dsh-startup-screen
+(https://github.com/6shenhonghong9/dsh-startup-screen), also released under the
+MIT License. The six-act built-in splash sequence, its stylesheet, audio assets
+and text come from that project.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

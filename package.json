@@ -1,0 +1,62 @@
+{
+  "name": "dsh-custom-splash",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness 启动界面：启动时全屏播放你自己的视频（播完淡出进入主界面），内置六幕动画可随时切回。视频可放固定路径直接替换，支持跳过、静音降级、音量与画面适配，web profile 与 DeepSeek Harness Desktop 桌面端通用。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek-harness-desktop",
+    "startup",
+    "splash",
+    "startup-video",
+    "boot-animation"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "INSTALL.md",
+    "DESKTOP.md",
+    "screenshots.json",
+    "docs",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/smoke-host.mjs && node test/smoke-splash.mjs && node test/smoke-client.mjs && node test/smoke-desktop-boot.mjs",
+    "pack:release": "npm pack --pack-destination release"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6shenhonghong9/dsh-custom-splash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/6shenhonghong9/dsh-custom-splash/issues"
+  },
+  "homepage": "https://github.com/6shenhonghong9/dsh-custom-splash#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "author": "沈宏宏"
+}
