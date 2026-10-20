@@ -1,4 +1,4 @@
-# dsh-custom-splash
+<img width="382" height="397" alt="image" src="https://github.com/user-attachments/assets/c6232e0d-703b-4230-baf7-4b90af99fab3" /># dsh-custom-splash
 
 A startup-screen plugin for [DeepSeek Harness](https://github.com/deepseek-ai) (DSH):
 play **your own video** full-screen while DSH boots, then fade into the app.
@@ -150,3 +150,5 @@ MIT. Based on [`6shenhonghong9/dsh-startup-screen`](https://github.com/6shenhong
 This fork adds the video mode, replaceable video path, first-frame flash fix and the
 related settings.
 <!-- test -->
+<!-- test -->
+
