@@ -149,3 +149,4 @@ MIT. Based on [`6shenhonghong9/dsh-startup-screen`](https://github.com/6shenhong
 (MIT) — the builtin six-act sequence, its styles, audio assets and copy come from there.
 This fork adds the video mode, replaceable video path, first-frame flash fix and the
 related settings.
+<!-- test -->
