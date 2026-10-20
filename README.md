@@ -150,5 +150,5 @@ MIT. Based on [`6shenhonghong9/dsh-startup-screen`]
 This fork adds the video mode, replaceable video path, first-frame flash fix and the
 related settings.
 <!-- test --><!-- test -->
-<!-- test -->
+<!-- test --><!-- test -->
 
