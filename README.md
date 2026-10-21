@@ -2,8 +2,6 @@
 
 A startup-screen plugin for [DeepSeek Harness](https://github.com/deepseek-ai) (DSH):
 play **your own video** full-screen while DSH boots, then fade into the app.
-The built-in six-act splash sequence from the upstream project is still available and
-can be switched back at any time.
 
 中文详细说明：[README.zh.md](README.zh.md)
 
@@ -13,9 +11,7 @@ can be switched back at any time.
 
 ## Features
 
-- **Two splash modes, pick one** — `video` (default): a local MP4 covering the window,
-  auto-fading into the app when it ends; `builtin`: the original six-act interactive
-  sequence with real-voice lines and UI sounds.
+- **Video mode (default)** — a local MP4 covering the window, auto-fading into the app when it ends.
 - **Swap the video without reinstalling** — drop any MP4 at
   `%USERPROFILE%\.dsh\startup-video\boot.mp4` (or `~/.dsh/startup-video/boot.mp4`),
   or point the setting at any absolute path (file or directory).
@@ -28,6 +24,8 @@ can be switched back at any time.
 - **Skippable** — bottom-right skip button, `Esc`, or click (after 0.9 s).
 - **Per-session by default** — a refresh in the same tab does not replay it;
   `always` / `daily` are also available.
+
+> **Note**: The built-in six-act interactive sequence from the upstream project is currently disabled in this v1.0.0 fork due to a DOM mounting compatibility issue. It will be restored in a future update.
 
 ---
 
@@ -149,6 +147,5 @@ MIT. Based on [`6shenhonghong9/dsh-startup-screen`]
 (MIT) — the builtin six-act sequence, its styles, audio assets and copy come from there.
 This fork adds the video mode, replaceable video path, first-frame flash fix and the
 related settings.
-<!-- test --><!-- test -->
-<!-- test --><!-- test -->
+
 
